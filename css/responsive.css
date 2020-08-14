@@ -307,13 +307,22 @@
   }
   #quem-sou{
     display: flex; 
+    flex-direction: column;
+    height: 70px;
   }
+
   #quem-sou .row{
-      flex-direction: column-reverse; 
+      /* flex-direction: column-reverse;  */
+  }
+  .ajustesPlanos{
+    margin-bottom: 2rem;
   }
 }
  
 @media screen and (min-width: 768px) {
+  #quem-sou-desktop, #como-funciona-desktop, #depoimentos-desktop{
+    height: 140px;
+  }
     footer{
         position: fixed;
         bottom: 0;
